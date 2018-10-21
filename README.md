@@ -10,8 +10,7 @@ ljs@swmu.edu.cn
 
 Overview
 =========================
-DeepT3 tool can be used to make T3SS secreted effectors prediction based on convolutions neural networks and a one-hot
-representation of N-terminal sequence.
+DeepT3 tool can be used to make T3SS secreted effectors prediction based on convolutions neural networks and a one-hot representation of N-terminal sequence.
 At a high level, the tool consists of (a) a one-hot vector representation for raw N-termianl sequence of 100 residues, (b) two training models to learn weights to the classifier. (c) an inference model to make prediction new proteins.
 
 Usage
@@ -48,19 +47,14 @@ There are two folders in the train_test_data folder:
 
 R function and file
 =========================
-  
-   main: The main driver to the DeepT3 scripts 
 
-   Onehotencoding: Convert protein N-terminal first 100 residues into a   
-   one-hot matrix with 20 rows and 100 columns. The 20 rows corresponds to  
-   the twenty amino acids G, A, V, L, I, P, F, Y, W, S, T, C, M, N, Q, D, 
-   E, K, R and H.
+main: The main driver to the DeepT3 scripts 
 
-   DeepT3_scores: Predict the T3SEs using the deep convolutional neural
-   network.
+Onehotencoding: Convert protein N-terminal first 100 residues into a one-hot matrix with 20 rows and 100 columns. The 20 rows corresponds to the twenty amino acids G, A, V, L, I, P, F, Y, W, S, T, C, M, N, Q, D, E, K, R and H.
 
-   CNN£ºThis file implements the convolutional neural network to train,
-   evaluate, and make inference prediction.
+DeepT3_scores: Predict the T3SEs using the deep convolutional neural network.
+
+CNN£ºThis file implements the convolutional neural network to train, evaluate, and make inference prediction.
 
 
 Requirements
